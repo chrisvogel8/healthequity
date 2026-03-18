@@ -71,7 +71,7 @@ nav {
 .nav-left {
   display: flex;
   align-items: center;
-  gap: 3rem;
+  gap: 2rem;
   flex-shrink: 0;
 }
 
@@ -632,8 +632,8 @@ nav {
 }
 
 .hero-text {
-  padding: 10rem 3rem 6rem;
-  padding-left: max(4rem, calc((100% - 1320px) / 2 + 1.5rem));
+  padding: 10rem 2rem 6rem;
+  padding-left: clamp(2rem, 4vw, 4rem);
   display: flex;
   flex-direction: column;
   justify-content: center;
