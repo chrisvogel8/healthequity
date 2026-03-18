@@ -9,7 +9,6 @@
 </head>
 <body>
 
-<!-- NAV -->
 <nav>
   <div class="nav-left">
     <a href="#" class="logo">
@@ -51,10 +50,10 @@
           <div class="mega-inner">
             <div class="mega-col">
               <h5>Individuals & families</h5>
-              <a href="#">Open an HSA</a>
               <a href="#">Manage your accounts</a>
               <a href="#">Pay medical bills</a>
               <a href="#">Save for the future</a>
+              <a href="#">Open an HSA</a>
             </div>
             <div class="mega-col">
               <h5>Employers</h5>
@@ -86,21 +85,21 @@
             </div>
             <div class="mega-col">
               <h5>Education</h5>
-              <a href="#">Qualified Medical Expenses</a>
-              <a href="#">Open Enrollment Center</a>
               <a href="#">HSA 101 guide</a>
               <a href="#">FSA guide</a>
+              <a href="#">HSA vs. FSA comparison</a>
               <a href="#">Webinars</a>
-              <a href="#">Events</a>
             </div>
             <div class="mega-col">
               <h5>Compliance</h5>
               <a href="#">IRS contribution limits</a>
               <a href="#">State & federal tax laws</a>
+              <h5>Newsroom</h5>
+              <a href="#">Press releases</a>
+              <a href="#">Media kit</a>
               <h5>Insights</h5>
               <a href="#">Blog</a>
               <a href="#">Whitepapers</a>
-              <a href="#">Case studies</a>
             </div>
           </div>
         </div>
@@ -134,8 +133,8 @@
       </div>
       <div class="nav-item has-dropdown">
         <a href="#">About <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></a>
-        <div class="mega-dropdown">
-          <div class="mega-inner">
+        <div class="mega-dropdown mega-dropdown-sm">
+          <div class="mega-inner mega-inner-sm">
             <div class="mega-col">
               <h5>Company</h5>
               <a href="#">Overview & mission</a>
@@ -143,15 +142,6 @@
               <a href="#">Board of directors</a>
             </div>
             <div class="mega-col">
-              <h5>Investor relations</h5>
-              <a href="#">Quarterly reports</a>
-              <a href="#">Stock information</a>
-              <a href="#">SEC filings</a>
-            </div>
-            <div class="mega-col">
-              <h5>Newsroom</h5>
-              <a href="#">Press releases</a>
-              <a href="#">Media kit</a>
               <h5>Careers</h5>
               <a href="#">Open positions</a>
               <a href="#">Culture & values</a>
@@ -159,18 +149,135 @@
           </div>
         </div>
       </div>
-      <a href="#" class="nav-link-standalone">HSAnswers</a>
     </div>
   </div>
-  <div class="nav-search">
-    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
-    <input type="text" placeholder="Search benefits, expenses, guides...">
-  </div>
   <div class="nav-right">
-    <a href="https://my.healthequity.com/ClientLogin.aspx" class="btn btn-ghost">Log in</a>
-    <a href="https://individualhsa.healthequity.com/Signup/Member" class="btn btn-fill">Open My HSA</a>
-</div>
+    <button class="nav-search-btn" id="navSearchBtn">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+    </button>
+    <a href="#" class="btn btn-ghost">Log in</a>
+    <a href="#" class="btn btn-fill">Open My HSA</a>
+    <button class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
 </nav>
+
+<!-- SEARCH OVERLAY -->
+<div class="search-overlay" id="searchOverlay">
+  <div class="search-overlay-inner">
+    <input type="text" class="search-overlay-input" id="searchOverlayInput" placeholder="Search benefits, expenses, guides..." autofocus>
+    <button class="search-overlay-close" id="searchOverlayClose">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+  </div>
+</div>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mobile-menu-inner">
+    <div class="mobile-nav-item">
+      <button class="mobile-nav-toggle">What We Offer <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></button>
+      <div class="mobile-sub">
+        <h6>Spend & save</h6>
+        <a href="#">Health Savings Account (HSA)</a>
+        <a href="#">Flexible Spending Account (FSA)</a>
+        <a href="#">Health Reimbursement Arrangement (HRA)</a>
+        <h6>Commuter</h6>
+        <a href="#">Parking</a>
+        <a href="#">Transit</a>
+        <h6>Invest</h6>
+        <a href="#">HSA investment options</a>
+        <a href="#">Vanguard fund lineup</a>
+        <h6>Retirement</h6>
+        <a href="#">401(k) administration</a>
+        <a href="#">403(b) administration</a>
+        <h6>COBRA</h6>
+        <a href="#">Coverage continuation</a>
+        <a href="#">Direct billing</a>
+      </div>
+    </div>
+    <div class="mobile-nav-item">
+      <button class="mobile-nav-toggle">Who It's For <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></button>
+      <div class="mobile-sub">
+        <h6>Individuals & families</h6>
+        <a href="#">Manage your accounts</a>
+        <a href="#">Pay medical bills</a>
+        <a href="#">Save for the future</a>
+        <a href="#">Open an HSA</a>
+        <h6>Employers</h6>
+        <a href="#">Plan administration</a>
+        <a href="#">Employee enrollment</a>
+        <a href="#">Compliance tools</a>
+        <a href="#">Total solution</a>
+        <h6>Brokers & consultants</h6>
+        <a href="#">Partner resources</a>
+        <a href="#">Data sheets</a>
+        <h6>Health plan partners</h6>
+        <a href="#">Integrations & API</a>
+        <a href="#">Bundled pricing</a>
+      </div>
+    </div>
+    <div class="mobile-nav-item">
+      <button class="mobile-nav-toggle">Resources <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></button>
+      <div class="mobile-sub">
+        <h6>Calculators</h6>
+        <a href="#">HSA tax savings calculator</a>
+        <a href="#">Retirement projector</a>
+        <a href="#">Contribution calculator</a>
+        <h6>Education</h6>
+        <a href="#">HSA 101 guide</a>
+        <a href="#">FSA guide</a>
+        <a href="#">HSA vs. FSA comparison</a>
+        <a href="#">Webinars</a>
+        <h6>Compliance</h6>
+        <a href="#">IRS contribution limits</a>
+        <a href="#">State & federal tax laws</a>
+        <h6>Newsroom</h6>
+        <a href="#">Press releases</a>
+        <a href="#">Media kit</a>
+        <h6>Insights</h6>
+        <a href="#">Blog</a>
+        <a href="#">Whitepapers</a>
+      </div>
+    </div>
+    <div class="mobile-nav-item">
+      <button class="mobile-nav-toggle">Support <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></button>
+      <div class="mobile-sub">
+        <h6>Help center</h6>
+        <a href="#">FAQs</a>
+        <a href="#">Login help</a>
+        <a href="#">Troubleshooting</a>
+        <h6>Contact us</h6>
+        <a href="#">Phone & hours</a>
+        <a href="#">Live chat</a>
+        <a href="#">Mailing address</a>
+        <h6>Forms & documents</h6>
+        <a href="#">Reimbursement forms</a>
+        <a href="#">Beneficiary updates</a>
+        <h6>Mobile app</h6>
+        <a href="#">Download for iOS</a>
+        <a href="#">Download for Android</a>
+      </div>
+    </div>
+    <div class="mobile-nav-item">
+      <button class="mobile-nav-toggle">About <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></button>
+      <div class="mobile-sub">
+        <h6>Company</h6>
+        <a href="#">Overview & mission</a>
+        <a href="#">Leadership team</a>
+        <a href="#">Board of directors</a>
+        <h6>Careers</h6>
+        <a href="#">Open positions</a>
+        <a href="#">Culture & values</a>
+      </div>
+    </div>
+    <div class="mobile-nav-actions">
+      <a href="#" class="btn btn-fill-lg mobile-cta">Open My HSA</a>
+      <a href="#" class="btn btn-ghost">Log in</a>
+    </div>
+  </div>
+</div>
 
 <!-- HERO -->
 <section class="hero">
@@ -431,20 +538,6 @@
     </div>
     </footer>
 
-<script>
-  var obs = new IntersectionObserver(function(entries) {
-    entries.forEach(function(e) {
-      if (e.isIntersecting) {
-        e.target.classList.add('visible');
-        obs.unobserve(e.target);
-      }
-    });
-  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
-
-  document.querySelectorAll('.reveal').forEach(function(el) {
-    obs.observe(el);
-  });
-</script>
 
 <!-- CHAT WIDGET -->
 <div class="chat-widget">
@@ -485,88 +578,174 @@
 </div>
 
 <script>
-  // Chat widget toggle
-  var chatFab = document.getElementById('chatFab');
-  var chatClose = document.getElementById('chatClose');
-  var chatWidget = document.querySelector('.chat-widget');
-  var chatInput = document.getElementById('chatInput');
-  var chatSend = document.getElementById('chatSend');
-  var chatBody = document.getElementById('chatBody');
+  // =====================
+  // 1. MOBILE MENU (runs first)
+  // =====================
+  (function() {
+    var ham = document.getElementById('hamburger');
+    var mob = document.getElementById('mobileMenu');
 
-  chatFab.addEventListener('click', function() {
-    chatWidget.classList.toggle('active');
-    if (chatWidget.classList.contains('active')) {
-      chatInput.focus();
-    }
-  });
-
-  chatClose.addEventListener('click', function() {
-    chatWidget.classList.remove('active');
-  });
-
-  function sendMessage() {
-    var text = chatInput.value.trim();
-    if (!text) return;
-
-    var userMsg = document.createElement('div');
-    userMsg.className = 'chat-msg user';
-    userMsg.innerHTML = '<div class="chat-bubble">' + text + '</div>';
-    chatBody.appendChild(userMsg);
-    chatInput.value = '';
-    chatBody.scrollTop = chatBody.scrollHeight;
-
-    setTimeout(function() {
-      var botMsg = document.createElement('div');
-      botMsg.className = 'chat-msg bot';
-      botMsg.innerHTML = '<div class="chat-bubble">Thanks for your message! A member of our team will be with you shortly.</div>';
-      chatBody.appendChild(botMsg);
-      chatBody.scrollTop = chatBody.scrollHeight;
-    }, 1000);
-  }
-
-  chatSend.addEventListener('click', sendMessage);
-  chatInput.addEventListener('keydown', function(e) {
-    if (e.key === 'Enter') sendMessage();
-  });
-
-  // Auto-popup teaser after 3 seconds
-  setTimeout(function() {
-    var teaser = document.createElement('div');
-    teaser.className = 'chat-teaser';
-    teaser.innerHTML = '<button class="chat-teaser-close">&times;</button>Hi there! 👋 Have questions about your HSA or FSA benefits?';
-    chatWidget.insertBefore(teaser, chatFab);
-
-    setTimeout(function() {
-      teaser.classList.add('visible');
-    }, 50);
-
-    teaser.addEventListener('click', function() {
-      teaser.classList.remove('visible');
-      setTimeout(function() { teaser.remove(); }, 300);
-      chatWidget.classList.add('active');
-      chatInput.focus();
-    });
-
-    var teaserClose = teaser.querySelector('.chat-teaser-close');
-    if (teaserClose) {
-      teaserClose.addEventListener('click', function(e) {
+    if (ham && mob) {
+      ham.addEventListener('click', function(e) {
         e.stopPropagation();
-        teaser.classList.remove('visible');
-        setTimeout(function() { teaser.remove(); }, 300);
+        ham.classList.toggle('active');
+        mob.classList.toggle('active');
+        document.body.style.overflow = mob.classList.contains('active') ? 'hidden' : '';
       });
     }
 
-    chatFab.classList.add('pulse');
-  }, 3000);
+    document.addEventListener('click', function(e) {
+      var toggle = e.target;
+      while (toggle && !toggle.classList.contains('mobile-nav-toggle')) {
+        toggle = toggle.parentElement;
+      }
+      if (!toggle) return;
 
-  chatFab.addEventListener('click', function() {
-    var teaser = document.querySelector('.chat-teaser');
-    if (teaser) {
-      teaser.classList.remove('visible');
-      setTimeout(function() { teaser.remove(); }, 300);
+      e.preventDefault();
+      e.stopPropagation();
+
+      var item = toggle.parentElement;
+      var isOpen = item.classList.contains('open');
+
+      var allItems = document.querySelectorAll('.mobile-nav-item');
+      for (var i = 0; i < allItems.length; i++) {
+        allItems[i].classList.remove('open');
+      }
+
+      if (!isOpen) {
+        item.classList.add('open');
+      }
+    });
+  })();
+
+  // =====================
+  // 2. SCROLL REVEAL
+  // =====================
+  (function() {
+    var obs = new IntersectionObserver(function(entries) {
+      entries.forEach(function(e) {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          obs.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+    document.querySelectorAll('.reveal').forEach(function(el) {
+      obs.observe(el);
+    });
+  })();
+
+  // =====================
+  // 3. SEARCH OVERLAY
+  // =====================
+  (function() {
+    var btn = document.getElementById('navSearchBtn');
+    var overlay = document.getElementById('searchOverlay');
+    var close = document.getElementById('searchOverlayClose');
+    var input = document.getElementById('searchOverlayInput');
+
+    if (btn && overlay) {
+      btn.addEventListener('click', function() {
+        overlay.classList.add('active');
+        if (input) setTimeout(function() { input.focus(); }, 100);
+      });
     }
-    chatFab.classList.remove('pulse');
-  });
+
+    if (close && overlay) {
+      close.addEventListener('click', function() {
+        overlay.classList.remove('active');
+      });
+    }
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && overlay) overlay.classList.remove('active');
+    });
+  })();
+
+  // =====================
+  // 4. CHAT WIDGET
+  // =====================
+  (function() {
+    var fab = document.getElementById('chatFab');
+    var closeBtn = document.getElementById('chatClose');
+    var widget = document.querySelector('.chat-widget');
+    var input = document.getElementById('chatInput');
+    var send = document.getElementById('chatSend');
+    var body = document.getElementById('chatBody');
+
+    if (!fab || !widget || !input || !send || !body) return;
+
+    fab.addEventListener('click', function() {
+      widget.classList.toggle('active');
+      if (widget.classList.contains('active')) {
+        input.focus();
+      }
+      // Remove teaser
+      var teaser = widget.querySelector('.chat-teaser');
+      if (teaser) {
+        teaser.classList.remove('visible');
+        setTimeout(function() { teaser.remove(); }, 300);
+      }
+      fab.classList.remove('pulse');
+    });
+
+    if (closeBtn) {
+      closeBtn.addEventListener('click', function() {
+        widget.classList.remove('active');
+      });
+    }
+
+    function sendMessage() {
+      var text = input.value.trim();
+      if (!text) return;
+      var userMsg = document.createElement('div');
+      userMsg.className = 'chat-msg user';
+      userMsg.innerHTML = '<div class="chat-bubble">' + text + '</div>';
+      body.appendChild(userMsg);
+      input.value = '';
+      body.scrollTop = body.scrollHeight;
+      setTimeout(function() {
+        var botMsg = document.createElement('div');
+        botMsg.className = 'chat-msg bot';
+        botMsg.innerHTML = '<div class="chat-bubble">Thanks for your message! A member of our team will be with you shortly.</div>';
+        body.appendChild(botMsg);
+        body.scrollTop = body.scrollHeight;
+      }, 1000);
+    }
+
+    send.addEventListener('click', sendMessage);
+    input.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter') sendMessage();
+    });
+
+    // Teaser popup after 3 seconds
+    setTimeout(function() {
+      var teaser = document.createElement('div');
+      teaser.className = 'chat-teaser';
+      teaser.innerHTML = '<button class="chat-teaser-close">&times;</button>Hi there! Have questions about your HSA or FSA benefits?';
+      widget.insertBefore(teaser, fab);
+      setTimeout(function() { teaser.classList.add('visible'); }, 50);
+
+      teaser.addEventListener('click', function() {
+        teaser.classList.remove('visible');
+        setTimeout(function() { teaser.remove(); }, 300);
+        widget.classList.add('active');
+        input.focus();
+      });
+
+      var tClose = teaser.querySelector('.chat-teaser-close');
+      if (tClose) {
+        tClose.addEventListener('click', function(e) {
+          e.stopPropagation();
+          teaser.classList.remove('visible');
+          setTimeout(function() { teaser.remove(); }, 300);
+        });
+      }
+
+      fab.classList.add('pulse');
+    }, 3000);
+  })();
 </script>
 
 </body>
